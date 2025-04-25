@@ -116,7 +116,7 @@ systemctl enable -q --now octoprint
 msg_ok "Created Service"
 
 msg_info "Restart HAproxy"
-systemctl restart haproxy.service
+$STD systemctl restart haproxy.service
 msg_ok "Restarted HAproxy"
 
 motd_ssh
