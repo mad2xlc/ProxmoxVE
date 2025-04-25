@@ -48,6 +48,52 @@ pip install octoprint
 EOF
 msg_ok "Installed OctoPrint"
 
+msg_info "Install HAProxy"
+$STD apt-get install -y \
+  haproxy
+rm -f /etc/haproxy/haproxy.cfg
+msg_ok "Installed HAProxy"
+
+msg_info "Setup HAProxy"
+cat <<EOF >/etc/haproxy/haproxy.cfg
+global
+        maxconn 4096
+        user haproxy
+        group haproxy
+        daemon
+        log 127.0.0.1 local0 debug
+
+defaults
+        log     global
+        mode    http
+        option  httplog
+        option  dontlognull
+        retries 3
+        option redispatch
+        option http-server-close
+        option forwardfor
+        maxconn 2000
+        timeout connect 5s
+        timeout client  15m
+        timeout server  15m
+rontend public
+        bind :::80 v4v6
+#       bind *:443
+        use_backend webcam if { path_beg /webcam/ }
+        default_backend octoprint
+
+
+backend octoprint
+        http-request replace-path ^([^\ :]*)\ /(.*)     \1\ /\2
+        option forwardfor
+        server octoprint1 127.0.0.1:5000
+
+backend webcam
+        http-request replace-path /webcam/(.*) /\1
+        server webcam1  127.0.0.1:8080
+EOF
+msg_ok "Created HAProxy"
+
 msg_info "Creating Service"
 cat <<EOF >/etc/systemd/system/octoprint.service
 [Unit]
@@ -65,8 +111,13 @@ ExecStart=/opt/octoprint/bin/octoprint serve
 [Install]
 WantedBy=multi-user.target
 EOF
+
 systemctl enable -q --now octoprint
 msg_ok "Created Service"
+
+msg_info "Restart HAproxy"
+systemctl restart haproxy.service
+msg_ok "Restarted HAproxy"
 
 motd_ssh
 customize
