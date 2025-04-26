@@ -16,7 +16,8 @@ update_os
 msg_info "Installing Dependencies"
 $STD apt-get install -y git \
   libyaml-dev \
-  build-essential
+  build-essential \
+  haproxy
 msg_ok "Installed Dependencies"
 
 msg_info "Setup Python3"
@@ -49,8 +50,8 @@ EOF
 msg_ok "Installed OctoPrint"
 
 msg_info "Install HAProxy"
-$STD apt-get install -y \
-  haproxy
+$STD apt-get install -y
+
 rm -f /etc/haproxy/haproxy.cfg
 msg_ok "Installed HAProxy"
 
@@ -116,7 +117,7 @@ systemctl enable -q --now octoprint
 msg_ok "Created Service"
 
 msg_info "Restart HAproxy"
-$STD systemctl restart haproxy.service
+# $STD systemctl restart haproxy.service
 msg_ok "Restarted HAproxy"
 
 motd_ssh
