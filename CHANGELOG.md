@@ -14,12 +14,35 @@ Exercise vigilance regarding copycat or coat-tailing sites that seek to exploit 
 All LXC instances created using this repository come pre-installed with Midnight Commander, which is a command-line tool (`mc`) that offers a user-friendly file and directory management interface for the terminal environment.
 
 
+## 2025-04-25
+
+### 🚀 Updated Scripts
+
+  - #### 🐞 Bug Fixes
+
+    - Element Synapse: Fix update for older versions [@tremor021](https://github.com/tremor021) ([#4050](https://github.com/community-scripts/ProxmoxVE/pull/4050))
+
+### 🌐 Website
+
+  - #### 🐞 Bug Fixes
+
+    - Only show update source when app is marked updateable [@michelroegl-brunner](https://github.com/michelroegl-brunner) ([#4059](https://github.com/community-scripts/ProxmoxVE/pull/4059))
+
+  - #### 📝 Script Information
+
+    - Filebrowser: Add Category Files & Donwloads [@michelroegl-brunner](https://github.com/michelroegl-brunner) ([#4055](https://github.com/community-scripts/ProxmoxVE/pull/4055))
+
+### 💥 Breaking Changes
+
+  - Removal of Seafile due to recurring problems [@michelroegl-brunner](https://github.com/michelroegl-brunner) ([#4058](https://github.com/community-scripts/ProxmoxVE/pull/4058))
+
 ## 2025-04-24
 
 ### 🚀 Updated Scripts
 
   - #### 🐞 Bug Fixes
 
+    - Element Synapse: Fix Admin UI install and update procedure [@tremor021](https://github.com/tremor021) ([#4041](https://github.com/community-scripts/ProxmoxVE/pull/4041))
     - SLSKD: always check for soularr update [@vhsdream](https://github.com/vhsdream) ([#4012](https://github.com/community-scripts/ProxmoxVE/pull/4012))
 
   - #### ✨ New Features

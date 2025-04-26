@@ -1,8 +1,103 @@
 [
   {
+    "name": "zitadel/zitadel",
+    "version": "v2.71.8",
+    "date": "2025-04-25T11:50:04Z"
+  },
+  {
+    "name": "photoprism/photoprism",
+    "version": "250425-21ddba459",
+    "date": "2025-04-25T11:18:53Z"
+  },
+  {
     "name": "fhem/fhem-mirror",
     "version": "6.2",
-    "date": "2025-04-24T10:35:55Z"
+    "date": "2025-04-25T10:34:09Z"
+  },
+  {
+    "name": "home-assistant/core",
+    "version": "2025.4.4",
+    "date": "2025-04-25T07:47:57Z"
+  },
+  {
+    "name": "donaldzou/WGDashboard",
+    "version": "v4.2.2",
+    "date": "2025-04-25T07:42:03Z"
+  },
+  {
+    "name": "evcc-io/evcc",
+    "version": "0.203.3",
+    "date": "2025-04-25T06:29:28Z"
+  },
+  {
+    "name": "mattermost/mattermost",
+    "version": "v10.6.2",
+    "date": "2025-04-15T08:14:23Z"
+  },
+  {
+    "name": "Jackett/Jackett",
+    "version": "v0.22.1823",
+    "date": "2025-04-25T05:52:52Z"
+  },
+  {
+    "name": "goauthentik/authentik",
+    "version": "version/2025.4.0-rc1",
+    "date": "2025-04-25T04:53:56Z"
+  },
+  {
+    "name": "immich-app/immich",
+    "version": "v1.132.2",
+    "date": "2025-04-25T03:07:06Z"
+  },
+  {
+    "name": "moghtech/komodo",
+    "version": "v1.17.3",
+    "date": "2025-04-25T02:33:19Z"
+  },
+  {
+    "name": "docmost/docmost",
+    "version": "v0.20.3",
+    "date": "2025-04-24T22:33:32Z"
+  },
+  {
+    "name": "mongodb/mongo",
+    "version": "r7.0.19",
+    "date": "2025-04-24T20:59:43Z"
+  },
+  {
+    "name": "keycloak/keycloak",
+    "version": "26.2.1",
+    "date": "2025-04-23T12:17:17Z"
+  },
+  {
+    "name": "rogerfar/rdt-client",
+    "version": "v2.0.110",
+    "date": "2025-04-24T19:11:06Z"
+  },
+  {
+    "name": "cross-seed/cross-seed",
+    "version": "v6.11.2",
+    "date": "2025-02-26T14:54:49Z"
+  },
+  {
+    "name": "dotnetfactory/fluid-calendar",
+    "version": "v1.4.0",
+    "date": "2025-04-24T16:20:17Z"
+  },
+  {
+    "name": "jhuckaby/Cronicle",
+    "version": "v0.9.79",
+    "date": "2025-04-24T15:53:43Z"
+  },
+  {
+    "name": "openobserve/openobserve",
+    "version": "v0.14.6-rc8",
+    "date": "2025-04-24T15:39:41Z"
+  },
+  {
+    "name": "Checkmk/checkmk",
+    "version": "v2.3.0p31",
+    "date": "2025-04-24T15:08:03Z"
   },
   {
     "name": "glpi-project/glpi",
@@ -20,44 +115,14 @@
     "date": "2025-04-24T08:07:21Z"
   },
   {
-    "name": "Jackett/Jackett",
-    "version": "v0.22.1822",
-    "date": "2025-04-24T06:06:38Z"
-  },
-  {
     "name": "inventree/InvenTree",
     "version": "0.17.11",
     "date": "2025-04-24T05:25:55Z"
   },
   {
-    "name": "openobserve/openobserve",
-    "version": "v0.14.6-rc7",
-    "date": "2025-04-24T04:02:56Z"
-  },
-  {
-    "name": "rogerfar/rdt-client",
-    "version": "v2.0.109",
-    "date": "2025-04-24T03:55:08Z"
-  },
-  {
     "name": "syncthing/syncthing",
     "version": "v2.0.0-beta.9",
     "date": "2025-04-12T13:58:29Z"
-  },
-  {
-    "name": "immich-app/immich",
-    "version": "v1.132.1",
-    "date": "2025-04-23T22:08:21Z"
-  },
-  {
-    "name": "keycloak/keycloak",
-    "version": "26.2.1",
-    "date": "2025-04-23T12:17:17Z"
-  },
-  {
-    "name": "mongodb/mongo",
-    "version": "r6.0.22",
-    "date": "2025-04-23T19:53:55Z"
   },
   {
     "name": "Radarr/Radarr",
@@ -95,24 +160,9 @@
     "date": "2025-03-18T07:33:51Z"
   },
   {
-    "name": "docmost/docmost",
-    "version": "v0.20.1",
-    "date": "2025-04-23T13:44:12Z"
-  },
-  {
-    "name": "Checkmk/checkmk",
-    "version": "v2.3.0p31-rc1",
-    "date": "2025-04-23T13:16:47Z"
-  },
-  {
     "name": "redis/redis",
     "version": "7.4.3",
     "date": "2025-04-23T12:00:04Z"
-  },
-  {
-    "name": "donaldzou/WGDashboard",
-    "version": "v4.2.1",
-    "date": "2025-04-23T11:42:05Z"
   },
   {
     "name": "Graylog2/graylog2-server",
@@ -125,11 +175,6 @@
     "date": "2025-04-23T08:26:31Z"
   },
   {
-    "name": "mattermost/mattermost",
-    "version": "v10.6.2",
-    "date": "2025-04-15T08:14:23Z"
-  },
-  {
     "name": "zabbix/zabbix",
     "version": "7.2.6",
     "date": "2025-04-23T08:06:23Z"
@@ -138,16 +183,6 @@
     "name": "jupyter/notebook",
     "version": "v7.4.1",
     "date": "2025-04-23T06:40:34Z"
-  },
-  {
-    "name": "jhuckaby/Cronicle",
-    "version": "v0.9.78",
-    "date": "2025-04-23T01:38:28Z"
-  },
-  {
-    "name": "cross-seed/cross-seed",
-    "version": "v6.11.2",
-    "date": "2025-02-26T14:54:49Z"
   },
   {
     "name": "minio/minio",
@@ -168,11 +203,6 @@
     "name": "jenkinsci/jenkins",
     "version": "jenkins-2.507",
     "date": "2025-04-22T15:22:53Z"
-  },
-  {
-    "name": "evcc-io/evcc",
-    "version": "0.203.2",
-    "date": "2025-04-22T15:07:28Z"
   },
   {
     "name": "OliveTin/OliveTin",
@@ -293,16 +323,6 @@
     "name": "theonedev/onedev",
     "version": "v11.8.7",
     "date": "2025-04-19T11:19:29Z"
-  },
-  {
-    "name": "home-assistant/core",
-    "version": "2025.4.3",
-    "date": "2025-04-19T10:23:38Z"
-  },
-  {
-    "name": "moghtech/komodo",
-    "version": "v1.17.2",
-    "date": "2025-04-19T06:56:25Z"
   },
   {
     "name": "ollama/ollama",
@@ -540,16 +560,6 @@
     "date": "2025-04-10T16:32:00Z"
   },
   {
-    "name": "zitadel/zitadel",
-    "version": "v2.69.10",
-    "date": "2025-04-09T12:16:51Z"
-  },
-  {
-    "name": "goauthentik/authentik",
-    "version": "version/2025.2.4",
-    "date": "2025-04-08T18:39:57Z"
-  },
-  {
     "name": "linkwarden/linkwarden",
     "version": "v2.10.0",
     "date": "2025-04-08T12:33:57Z"
@@ -765,11 +775,6 @@
     "date": "2025-03-25T18:11:12Z"
   },
   {
-    "name": "dotnetfactory/fluid-calendar",
-    "version": "v1.3.0",
-    "date": "2025-03-25T15:55:02Z"
-  },
-  {
     "name": "hansmi/prometheus-paperless-exporter",
     "version": "v0.0.7",
     "date": "2025-03-25T15:11:18Z"
@@ -813,11 +818,6 @@
     "name": "clusterzx/paperless-ai",
     "version": "v2.7.6",
     "date": "2025-03-21T19:24:53Z"
-  },
-  {
-    "name": "photoprism/photoprism",
-    "version": "250321-57590c48b",
-    "date": "2025-03-21T11:48:16Z"
   },
   {
     "name": "seanmorley15/AdventureLog",
