@@ -13,12 +13,24 @@ setting_up_container
 network_check
 update_os
 
+read -r -p "Would you like to install HAproxy to be able to reach the web interface on port 80? (y or n) " prompt
+if [[ $prompt == "y" ]]; then
+  HAPROXY="true"
+else
+  HAPROXY="false"
+fi
+
 msg_info "Installing Dependencies"
 $STD apt-get install -y git \
   libyaml-dev \
-  build-essential \
-  haproxy
+  build-essential
 msg_ok "Installed Dependencies"
+
+if [[ $HAPROXY == "true" ]]; then
+  msg_info "Installing HAproxy"
+  $STD apt-get install -y haproxy
+  msg_ok "Installed HAproxy"
+fi
 
 msg_info "Setup Python3"
 $STD apt-get install -y \
@@ -49,9 +61,9 @@ pip install octoprint
 EOF
 msg_ok "Installed OctoPrint"
 
-msg_info "Setup HAProxy"
-rm -f /etc/haproxy/haproxy.cfg
-cat <<EOF >/etc/haproxy/haproxy.cfg
+if [[ $HAPROXY == "true" ]]; then
+  msg_info "Setup HAProxy"
+  cat <<EOF >/etc/haproxy/haproxy.cfg
 global
         maxconn 4096
         user haproxy
@@ -86,11 +98,12 @@ backend webcam
         http-request replace-path /webcam/(.*)   /\1
         server webcam1  127.0.0.1:8080
 EOF
-msg_ok "Created HAProxy"
+  msg_ok "Created HAProxy"
 
-msg_info "Restart HAproxy"
-systemctl restart haproxy.service
-msg_ok "Restarted HAproxy"
+  msg_info "Restart HAproxy"
+  systemctl restart haproxy.service
+  msg_ok "Restarted HAproxy"
+fi
 
 msg_info "Creating Service"
 cat <<EOF >/etc/systemd/system/octoprint.service
